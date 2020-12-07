@@ -53,7 +53,8 @@
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.1.4",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "text-encoding-shim": "^1.0.5"
   },
   "dependencies": {},
   "prettier": {
