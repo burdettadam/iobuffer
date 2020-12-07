@@ -1,13 +1,16 @@
-import { TextDecoder, TextEncoder } from 'util';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const TextEncodingShim = require('text-encoding-shim');
+var TextEncoder = TextEncodingShim.TextEncoder;
+var TextDecoder = TextEncodingShim.TextDecoder;
 const decoder = new TextDecoder('utf-8');
-
-export function decode(bytes: Uint8Array): string {
-  return decoder.decode(bytes);
+function decode(bytes) {
+    return decoder.decode(bytes);
 }
-
+exports.decode = decode;
 const encoder = new TextEncoder();
-
-export function encode(str: string): Uint8Array {
-  return encoder.encode(str);
+function encode(str) {
+    return encoder.encode(str);
 }
+exports.encode = encode;
+//# sourceMappingURL=utf8.js.map
